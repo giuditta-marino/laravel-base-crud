@@ -9,6 +9,9 @@
 
 <div class="container">
   <div class="row">
+    <a href="{{route('comics.create')}}">Inserisci un nuovo fumetto</a>
+  </div>
+  <div class="row">
     @foreach ($comics as $key=> $comic)
     <div class="col-lg-2 card">
       <h4>{{$comic->title}}</h4>
