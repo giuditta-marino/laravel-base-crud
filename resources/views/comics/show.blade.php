@@ -1,0 +1,1 @@
+<p>{{$comic->description}}</p>

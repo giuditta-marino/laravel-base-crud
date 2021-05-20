@@ -15,8 +15,11 @@
       <h5>{{$comic->series}}</h5>
       <h6>Genre: {{$comic->type}}</h6>
       <p>In vendita da: {{$comic->sale_date}}</p>
-      <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
+      <a href="{{route('comics.show', ['comic' => $comic->id])}}">
+          <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
+      </a>
       <p>$ {{$comic->price}}</p>
+      <!-- <p>{{$comic->description}}</p> -->
     </div>
     @endforeach
   </div>
