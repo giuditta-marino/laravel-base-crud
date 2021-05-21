@@ -23,6 +23,7 @@
       </a>
       <p>$ {{$comic->price}}</p>
       <!-- <p>{{$comic->description}}</p> -->
+      <a href="{{route('comics.edit', ['comic' => $comic->id])}}">Modifica il fumetto</a>
     </div>
     @endforeach
   </div>

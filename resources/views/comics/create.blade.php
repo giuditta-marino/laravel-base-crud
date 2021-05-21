@@ -1,3 +1,10 @@
+@extends('layouts.app')
+
+@section('title')
+<title>Inserimento fumetto</title>
+@endsection
+
+@section('content')
 <form class="" action="{{route('comics.store')}}" method="post">
   @csrf
   @method('POST')
@@ -9,5 +16,5 @@
   <input type="text" name="sale_date" value="" placeholder="Inserisci la data di vendita">
   <input type="text" name="type" value="" placeholder="Inserisci il genere">
   <input type="submit" name="" value="Crea nuovo fumetto">
-
 </form>
+@endsection('content')
