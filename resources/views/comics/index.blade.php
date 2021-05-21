@@ -24,6 +24,12 @@
       <p>$ {{$comic->price}}</p>
       <!-- <p>{{$comic->description}}</p> -->
       <a href="{{route('comics.edit', ['comic' => $comic->id])}}">Modifica il fumetto</a>
+
+      <form class="" action="{{route('comics.destroy', ['comic' => $comic->id])}}" method="post">
+        @csrf
+        @method('DELETE')
+        <input type="submit" name="" value="Delete">
+      </form>
     </div>
     @endforeach
   </div>
