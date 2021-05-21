@@ -1,6 +1,8 @@
 <form class="" action="{{route('comics.store')}}" method="post">
+  @csrf
+  @method('POST')
   <input type="text" name="title" value="" placeholder="Inserisci il titolo">
-  <input type="text" name="description" value="Inserisci una descrizione">
+  <input type="text" name="description" value="" placeholder="Inserisci una descrizione">
   <input type="text" name="thumb" value="" placeholder="Inserisci il link dell'immagine di copertina">
   <input type="text" name="price" value="" placeholder="Inserisci il prezzo">
   <input type="text" name="series" value="" placeholder="Inserisci il titolo della serie">
